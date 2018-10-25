@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  {{package}}:
+    build: .
+    tty: true
+    entrypoint: ["bash"]
+    volumes:
+      - .:/{{package}}
